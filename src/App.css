@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+.user{
+  border: 2px solid black;
+  width: 500px;
+  border-radius: 5px;
+}
+.user h1{
+  color: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.users-wrapper{
+  display: flex;
+  
+
+}
