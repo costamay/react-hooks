@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import User from './User'
+import Form from './Form'
 
 const data = [
   {
@@ -48,7 +49,7 @@ function Counter() {
     // useEffect(() =>  {}, [count])
 
     useEffect(() => {
-      fetch("https://jsonplaceholder.typicode.com/users")
+      fetch("http://localhost:3000/users")
       .then(res => res.json())
       .then(users => setUsers(users))
       .catch(error=> console.log(error))
@@ -63,6 +64,7 @@ function Counter() {
         <p>{count}</p>
         {/* <button onClick = {() => setCount(count + 1)}>Click Me</button> */}
         <button onClick = {handleClick}>Click Me</button>
+        <Form setUsers={setUsers} users={users}/>
         <div className='users-wrapper'>
         {displayUsers}
         </div>

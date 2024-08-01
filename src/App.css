@@ -48,6 +48,26 @@
 
 .users-wrapper{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   
 
+}
+
+.form-data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  border : 1px solid black;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+.form-inputs{
+  margin-bottom: 5px;
 }
